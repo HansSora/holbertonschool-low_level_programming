@@ -16,10 +16,10 @@ int main(void)
     printf("number is positive %d\n", n);
     }
 
-    {
     if (n == 0)
-
-    printf("number is equal %d\n", n);
+    
+    {
+    printf("number is zero %d\n", n);
     }
 
     {
