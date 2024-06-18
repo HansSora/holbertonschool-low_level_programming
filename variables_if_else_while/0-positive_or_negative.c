@@ -22,7 +22,7 @@ int main(void)
 
     if (n < 1)
 
-    printf("number is negative %d\n", n)
+    printf("number is negative %d\n", n);
 
 	return (0);
 }
