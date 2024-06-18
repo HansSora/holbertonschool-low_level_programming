@@ -12,17 +12,21 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
    
     if (n > 0)
-     
+    {
     printf("number is positive %d\n", n);
+    }
 
+    {
     if (n == 0)
 
     printf("number is equal %d\n", n);
+    }
 
+    {
     if (n < 1)
 
     printf("number is negative %d\n", n);
-
+    }
     
     printf("this is my number %d\n", n);
 
