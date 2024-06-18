@@ -13,19 +13,19 @@ int main(void)
    
     if (n > 0)
     {
-    printf("number is positive %d\n", n);
+    printf("%d is positive\n", n);
     }
 
     if (n == 0)
-    
+
     {
-    printf("number is zero %d\n", n);
+    printf("%d is zero\n", n);
     }
 
     {
     if (n < 1)
 
-    printf("number is negative %d\n", n);
+    printf("%dis negative\n", n);
     }
     
     printf("this is my number %d\n", n);
