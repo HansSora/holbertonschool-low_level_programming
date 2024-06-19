@@ -11,7 +11,7 @@
 int main(void)
 {
 
-printf("_putchar\n");
+puts("_putchar\n");
 
 return(0);
 
