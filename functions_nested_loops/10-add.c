@@ -1,12 +1,12 @@
 #include "main.h"
-
-int main(void)
-
+/**
+ * add - adds two integers and returns the result
+ * @a: the first integer
+ * @b: the second integer
+ *
+ * Return: the sum of the two integers
+ */
+int add(int a, int b)
 {
-	int n;
-
-	n = add(89, 9);
-
-	return (n);
-
+	return (a + b);
 }
