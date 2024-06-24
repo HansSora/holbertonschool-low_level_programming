@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print line - Prints a line of underscores in the terminal.
+* print_line - Prints a line of underscores in the terminal.
 *@n: Number of times the character '_' should be printed.
 */
 
