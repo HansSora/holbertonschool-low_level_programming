@@ -13,15 +13,15 @@ int found_num = 0;
 while (*s)
 {
 if (*s == '-')
-    sign *= -1;
+sign *= -1;
 else if (*s >= '0' && *s <= '9')
 {
-    num = num * 10 + (*s - '0');
-    found_num = 1;
+num = num * 10 + (*s - '0');
+found_num = 1;
 }
 else if (found_num)
-    break;
+break;
 s++;
 }
-return (sign * num);
+return (sign *num);
 }
