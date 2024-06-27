@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * _strcat -entry point,concat two strings
+ * @dest: -holds value for output
+ * @src: -holds value for output
+ * Return: (ptr)
+ */
+
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
