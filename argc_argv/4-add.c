@@ -14,7 +14,7 @@ int main(int argc __attribute__((__unused__)), char *argv[])
 	result = 0;
 	for (i = 0; i < argc; i++)
 	{
-		result = +atoi(argv[i]);
+		result += atoi(argv[i]);
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
