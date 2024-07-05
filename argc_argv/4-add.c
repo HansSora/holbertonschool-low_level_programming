@@ -1,30 +1,37 @@
-#include <stdio.h>
-#include <stdlib.h>
-/**
-* main - entry point
-* @argc: argument count
-* @argv: argument array
-*
-* Return: Always 0.
-*/
-int main(int argc __attribute__((__unused__)), char *argv[])
-{
-	int i, j, result;
+#include<stdio.h>
+#include<stdlib.h>
 
-	result = 0;
-	for (i = 0; i < argc; i++)
+/**
+ * main -entry point,adds positive nr
+ * @argc: -holds value for output
+ * @argv: -holds value for output
+ * Return: 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int sum = 0;
+	int i;
+	int j;
+
+	if (argc < 2)
 	{
-		result += atoi(argv[i]);
+		printf("0\n");
+		return (0);
+
+	}
+	for (i = 1; i < argc; i++)
+	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
+			if (argv[i][j] < 48 || argv[i][j] > 57)
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
+		sum = sum + atoi(argv[i]);
 	}
-
-	printf("%d\n", result);
+	printf("%d\n", sum);
 	return (0);
 }
