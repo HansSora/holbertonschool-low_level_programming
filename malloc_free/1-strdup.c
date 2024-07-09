@@ -1,23 +1,31 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char *s;
+char *_strdup(char *str)
 
-	s = _strdup("Duplicated");
-	if (s == NULL)
 	{
-		printf("failed to allocate memory\n");
-		return (1);
+
+	if (str == NULL)
+
+	{
+		return (NULL);
 	}
-	printf("%s\n", s);
-	free(s);
-	return (0);
+
+
+	size_t len = strlen(str);
+
+
+	char *dup = (char *)malloc((len + 1) * sizeof(char));
+
+
+	if (dup == NULL)
+
+	{
+		return (NULL);
+	}
+
+	strcpy(dup, str);
+
+
+	return (dup);
 }
