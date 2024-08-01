@@ -28,5 +28,5 @@ unsigned int binary_to_uint(const char *b)
 		weight = weight * 2;
 	}
 
-	return (sum)
+	return (sum);
 }
